@@ -64,7 +64,7 @@ où :
 # Analyse descriptive
 
 ## Gestion des valeurs manquantes
-Nos données ayant environ 6.5% de valeurs manquantes, nous alons utiliser des méthodes d'amputation pour inférer ces valeurs NA: une amputation par la moyenne/ médiane pour les variables imbalance_size, reference_price, matched_size, bid_price, ask_price, wap, target qui ont au plus 220/5237980 NA et une méthode d'interpolation pour les variables far_price et near_price qui ont environ 2894342/5237980 NA. _
+Nos données ayant environ 6.5% de valeurs manquantes, nous alons utiliser des méthodes d'amputation pour inférer ces valeurs NA: une amputation par la moyenne/ médiane pour les variables imbalance_size, reference_price, matched_size, bid_price, ask_price, wap, target qui ont au plus 220/5237980 NA et une méthode d'interpolation pour les variables far_price et near_price qui ont environ 2894342/5237980 NA. Aussi il faudra standardiser les données.
 Nous précisons que ce travail préliminaire est fait pour bien se familiariser avec les données, gagner en temps lors de l'apprentissage de nos modèles car les modèles utilisés ont déjà des options d'imputation de valeurs NA (et donc on pourrait négliger cette partie vu que les modèles le feront mais c'est mieux de le faire pour ganer en temps de compilation). 
 
 ## Correlation et Sélection de variables
