@@ -72,11 +72,34 @@ Des plots, des boxplots et des histogrammes ont été réalisés et la matrice d
 Vu le grand nombre de nos données (plus de 5 millions), nous avons envisagé une sélection des variables qui influencent le plus dans la prédiction du prix de fermeture (target), ceci avec le le modèle Catboost.
 
 # Modélisation
-Nous avons utilisé deux modèles pour un début: un Catboost et un LBMboost. Ensuite nous avons optimisé les hyperparamètres avec une BayesSearch. Après obtension des paramètres optimaux (fonctions des plages choisies), nous avons fait des mélanges des deus modèles (stacking et voting classifier) pour essayer d'augmenter la performance.
+Nous avons utilisé deux modèles pour un début: un Catboost et un LBMboost. Ensuite nous avons optimisé les hyperparamètres avec une BayesSearch. Après obtension des paramètres optimaux (fonctions des plages choisies), nous avons fait des mélanges des deus modèles (stacking et voting classifier) pour essayer d'augmenter la performance.\
+Le tableau ci dessous donne un petit récapitulatif des modèles testeés.
 
 
+| Modèle              | MAE sur l'ensemble de validation |
+|---------------------------------|----------------------------------|
+| CatBoost                        | 6.243025914454114                          |
+| LightGBM              | 6.296589689598023           |
+| Stacking                    |                            |
+|Voting Classifier|             |
 
 
+Les meilleurs hyperparamètres obtenus:
+| Modèle       | Hyperparamètre       | Valeur                         |
+|--------------|----------------------|-------------------------------|
+| CatBoost     | `iterations`         | 942                           |
+|              | `learning_rate`      | 0.2541400145361314            |
+|              | `depth`              | 9                             |
+|              | `l2_leaf_reg`        | 4.0                           |
+|              | `loss_function`      | 'MAE'                         |
+|              | `verbose`            | 100                           |
+| LightGBM     | `boosting_type`      | 'gbdt'                        |
+|              | `objective`          | 'regression'                  |
+|              | `num_leaves`         | 100                           |
+|              | `learning_rate`      | 0.1                           |
+|              | `max_depth`          | 9                             |
+|              | `reg_lambda`         | 10.0                          |
+|              | `verbose`            | 100                           |
 
 
 
