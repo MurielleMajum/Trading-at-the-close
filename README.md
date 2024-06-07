@@ -76,12 +76,12 @@ Nous avons utilisé deux modèles pour un début: un Catboost et un LBMboost. En
 Le tableau ci dessous donne un petit récapitulatif des modèles testeés.
 
 
-| Modèle              | MAE sur l'ensemble de validation |
-|---------------------------------|----------------------------------|
-| CatBoost                        | 6.243025914454114                          |
-| LightGBM              | 6.296589689598023           |
-| Stacking                    |                            |
-|Voting Classifier|             |
+| Modèle              | MAE sur l'ensemble| MAE sur l'ensemble de validation |
+|---------------------------------|----------------------------------|---------------|
+| CatBoost                        | 6.243025914454114     |                     |
+| LightGBM              | 6.296589689598023           | |
+| Stacking                    |                            |    |
+|Voting Classifier|             |             |
 
 
 Les meilleurs hyperparamètres obtenus:
