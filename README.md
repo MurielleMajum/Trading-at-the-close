@@ -102,7 +102,7 @@ Les meilleurs hyperparamètres obtenus:
 |              | `verbose`            | 100                           |
 
 
-### En conclusion, ces résultats nous montrent que le modèle Catboost est plus performant que les autres même après un mélang de modèles. On pourra aussi tester d'autres modèles comme le GRU ou les transformers.
+### En conclusion, ces résultats nous montrent que le modèle Catboost est plus performant que les autres même après un mélange de modèles. On pourra aussi tester d'autres modèles comme le GRU ou les transformers pour voir si la performance sera meilleure.
 
 
 
