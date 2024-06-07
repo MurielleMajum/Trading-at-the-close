@@ -78,10 +78,10 @@ Le tableau ci dessous donne un petit récapitulatif des modèles testeés.
 
 | Modèle              | MAE sur l'ensemble train| MAE sur l'ensemble de validation |
 |---------------------------------|----------------------------------|---------------|
-| CatBoost                       | 6.080235990591364| 6.243025914454114     |           
-| LightGBM            |6.25994439730751  | 6.296589689598023           |                   
-| Stacking                    |   6.263330069554935                         |  6.298979847137496  |
-|Voting Classifier|      6.0960846784639635       |   6.253348648490623          |
+| **CatBoost**                       | 6.080235990591364| 6.243025914454114     |           
+|**LightGBM**           |6.25994439730751  | 6.296589689598023           |                   
+| **Stacking**                    |   6.263330069554935                         |  6.298979847137496  |
+|**Voting Classifier**|      6.0960846784639635       |   6.253348648490623          |
 
 
 Les meilleurs hyperparamètres obtenus:
@@ -102,7 +102,7 @@ Les meilleurs hyperparamètres obtenus:
 |              | `verbose`            | 100                           |
 
 
-Ces résultats nous montrent que le modèle Catboost est plus performant que les autres même après un mélang de modèles.
+### En conclusion, ces résultats nous montrent que le modèle Catboost est plus performant que les autres même après un mélang de modèles.
 
 
 
